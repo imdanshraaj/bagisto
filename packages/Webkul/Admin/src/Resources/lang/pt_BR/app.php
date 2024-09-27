@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Catálogo',
 
                 'products' => [
-                    'info'  => 'Defina o checkout de convidado, página de visualização do produto, página de visualização do carrinho, frente da loja, revisão e compartilhamento social de atributos.',
+                    'info'  => 'Página de visualização do produto, página de visualização do carrinho, vitrine, avaliação e compartilhamento social de atributos.',
                     'title' => 'Produtos',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Texto do rodapé',
+                        'footer-text-info' => 'Insira o texto que aparecerá no rodapé do PDF.',
                         'info'             => 'Configurar Impressões em PDF para exibir o ID da Fatura, ID do Pedido no cabeçalho e incluir o logotipo da fatura.',
                         'invoice-id-info'  => 'Configurar a exibição do ID da Fatura no Cabeçalho da Fatura.',
                         'invoice-id-title' => 'Exibir ID da Fatura no Cabeçalho',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Finalizar Compra',
-                    'info'  => 'Ativar ou Desativar Mini Carrinho, Resumo do Carrinho.',
+                    'info'  => 'Definir checkout de convidado, habilitar ou desabilitar Mini Carrinho, resumo do carrinho.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Página do Carrinho',

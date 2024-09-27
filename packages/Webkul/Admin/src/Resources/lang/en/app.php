@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Catalog',
 
                 'products' => [
-                    'info'  => 'Set guest checkout, product view page, cart view page, store front, review and attribute social share.',
+                    'info'  => 'Product view page, cart view page, store front, review and attribute social share.',
                     'title' => 'Products',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Footer text',
+                        'footer-text-info' => 'Enter the text that will appear in the footer of the PDF.',
                         'info'             => 'Configure PDF Print Outs to display Invoice ID, Order ID in the header, and include the invoice logo.',
                         'invoice-id-info'  => 'Configure display of Invoice ID in Invoice Header.',
                         'invoice-id-title' => 'Display Invoice ID in Header',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Checkout',
-                    'info'  => 'Enable or Disable Mini Cart, cart Summary.',
+                    'info'  => 'Set guest checkout, Enable or Disable Mini Cart, cart Summary.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Cart Page',

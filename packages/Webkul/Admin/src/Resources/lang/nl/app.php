@@ -157,8 +157,8 @@ return [
                     'pay-by'          => 'Betaal Via - :method',
                     'pay-via'         => 'Betaal Via',
                     'pending-payment' => 'In afwachting van betaling',
-                    'pending'         => 'In behandeling',
-                    'processing'      => 'Verwerking',
+                    'pending'         => 'Wachtend',
+                    'processing'      => 'Bezig met verwerken',
                     'product-count'   => ':count + Meer producten',
                     'status'          => 'Status',
                     'success'         => 'Succes',
@@ -1547,7 +1547,7 @@ return [
                         'pay-via'         => 'Betaalwijze',
                         'pending'         => 'In behandeling',
                         'pending-payment' => 'Betaling in behandeling',
-                        'processing'      => 'Verwerking',
+                        'processing'      => 'Bezig met verwerken',
                         'status'          => 'Status',
                         'view'            => 'Bekijken',
                     ],
@@ -2774,7 +2774,7 @@ return [
                 'index' => [
                     'delete-warning' => 'Weet je zeker dat je wilt verwijderen?',
                     'tax-category'   => 'Belastingcategorie',
-                    'title'          => 'Belastingcategorieën',
+                    'title'          => 'BTW categorieën',
 
                     'datagrid' => [
                         'actions' => 'Acties',
@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Catalogus',
 
                 'products' => [
-                    'info'  => 'Stel gastafrekening in, productweergavepagina, winkelwagenweergavepagina, winkelvoorkant, beoordeling en attribuut delen via sociale media.',
+                    'info'  => 'Productweergavepagina, winkelwagenweergavepagina, etalage, beoordeling en sociale attributendelingsoptie.',
                     'title' => 'Producten',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Voettekst',
+                        'footer-text-info' => 'Voer de tekst in die in de voettekst van de PDF verschijnt.',
                         'info'             => 'Configureer PDF-afdrukken om het factuurnummer en het bestelnummer in de koptekst weer te geven en het factuurlogo op te nemen.',
                         'invoice-id-info'  => 'Configureer de weergave van het factuurnummer in de factuurkop.',
                         'invoice-id-title' => 'Toon factuurnummer in koptekst',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Afrekenen',
-                    'info'  => 'Schakel Mini-winkelwagen, winkelwagensamenvatting in of uit.',
+                    'info'  => 'Gastafrekenen instellen, mini-winkelwagen inschakelen of uitschakelen, winkelwagensamenvatting.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Winkelwagenpagina',
@@ -4104,7 +4106,7 @@ return [
                 'settings'                 => 'Instellingen',
                 'shipments'                => 'Zendingen',
                 'sitemaps'                 => 'Sitemaps',
-                'tax-categories'           => 'Belastingcategorieën',
+                'tax-categories'           => 'BTW categorieën',
                 'tax-rates'                => 'Belastingtarieven',
                 'taxes'                    => 'Belastingen',
                 'themes'                   => 'Thema\'s',
@@ -4342,7 +4344,7 @@ return [
         'shipments'                => 'Verzendingen',
         'sitemaps'                 => 'Sitemaps',
         'subscribers'              => 'Nieuwsbrief Abonnees',
-        'tax-categories'           => 'Belastingcategorieën',
+        'tax-categories'           => 'BTW categorieën',
         'tax-rates'                => 'Belastingtarieven',
         'taxes'                    => 'Belastingen',
         'themes'                   => 'Thema\'s',

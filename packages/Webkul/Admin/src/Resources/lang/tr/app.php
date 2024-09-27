@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Katalog',
 
                 'products' => [
-                    'info'  => 'Konuk ödeme, ürün görüntüleme sayfası, sepet görüntüleme sayfası, mağaza ön yüzü, inceleme ve öznitelik sosyal paylaşımını ayarlayın.',
+                    'info'  => 'Ürün görüntüleme sayfası, sepet görüntüleme sayfası, mağaza vitrini, inceleme ve özellik sosyal paylaşımı.',
                     'title' => 'Ürünler',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Alt bilgi metni',
+                        'footer-text-info' => 'PDF\'nin altbilgisinde görünecek metni girin.',
                         'info'             => 'Fatura Kimliği, Sipariş Kimliği\'ni başlıkta görüntülemek ve fatura logosunu içermek için PDF Yazdırmalarını yapılandırın.',
                         'invoice-id-info'  => 'Fatura Başlığında Fatura Kimliği\'nin görüntülenmesini yapılandırın.',
                         'invoice-id-title' => 'Başlıkta Fatura Kimliği\'ni Göster',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Ödeme',
-                    'info'  => 'Mini Sepet, Sepet Özeti\'ni etkinleştirin veya devre dışı bırakın.',
+                    'info'  => 'Misafir ödeme ayarlarını yapın, Mini Sepeti etkinleştir veya devre dışı bırak, sepet özeti.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Sepet Sayfası',

@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Katalog',
 
                 'products' => [
-                    'info'  => 'Setzen Sie den Gast-Checkout, die Produktansichtsseite, die Warenkorbansichtsseite, die Storefront, die Bewertung und die Attributfreigabe.',
+                    'info'  => 'Produktansichtsseite, Warenkorbansichtsseite, Storefront, Bewertung und Attribut-Sozialfreigabe.',
                     'title' => 'Produkte',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Fußzeilentext',
+                        'footer-text-info' => 'Geben Sie den Text ein, der in der Fußzeile des PDFs erscheint.',
                         'info'             => 'Konfigurieren Sie PDF-Druckausgaben, um die Rechnungs-ID, die Bestell-ID im Header anzuzeigen und das Rechnungslogo einzuschließen.',
                         'invoice-id-info'  => 'Konfigurieren Sie die Anzeige der Rechnungs-ID im Rechnungskopf.',
                         'invoice-id-title' => 'Rechnungs-ID im Header anzeigen',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Kasse',
-                    'info'  => 'Aktivieren oder Deaktivieren des Mini-Warenkorbs und der Warenkorbübersicht.',
+                    'info'  => 'Gast-Checkout einrichten, Mini-Warenkorb aktivieren oder deaktivieren, Warenkorbzusammenfassung.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Warenkorbseite',

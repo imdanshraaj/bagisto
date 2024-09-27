@@ -3471,7 +3471,7 @@ return [
                 'title' => 'Catálogo',
 
                 'products' => [
-                    'info'  => 'Configurar el pago de invitados, página de vista de producto, página de carrito, tienda en línea, reseñas y compartir en redes sociales de atributos.',
+                    'info'  => 'Página de vista del producto, página de vista del carrito, escaparate, revisión y compartir atributos en redes sociales.',
                     'title' => 'Productos',
 
                     'settings' => [
@@ -3925,6 +3925,8 @@ return [
                     ],
 
                     'pdf-print-outs' => [
+                        'footer-text'      => 'Texto de pie de página',
+                        'footer-text-info' => 'Introduce el texto que aparecerá en el pie de página del PDF.',
                         'info'             => 'Configurar las impresiones en PDF para mostrar el ID de la factura, el ID del pedido en el encabezado e incluir el logotipo de la factura.',
                         'invoice-id-info'  => 'Configurar la visualización del ID de la factura en el encabezado de la factura.',
                         'invoice-id-title' => 'Mostrar ID de factura en el encabezado',
@@ -4001,7 +4003,7 @@ return [
 
                 'checkout' => [
                     'title' => 'Finalizar compra',
-                    'info'  => 'Habilitar o deshabilitar el mini carrito, el resumen del carrito.',
+                    'info'  => 'Configurar pago como invitado, habilitar o deshabilitar el carrito mini, resumen del carrito.',
 
                     'shopping-cart' => [
                         'cart-page'              => 'Página del carrito',
