@@ -190,6 +190,11 @@ return [
                 'title'                   => 'Create Order for :name',
 
                 'types' => [
+                    'simple' => [
+                        'none'         => 'None',
+                        'total-amount' => 'Total Amount',
+                    ],
+
                     'configurable' => [
                         'select-options' => 'Please select an option',
                     ],
@@ -205,6 +210,11 @@ return [
 
                     'downloadable' => [
                         'title' => 'Links',
+                    ],
+
+                    'virtual' => [
+                        'none'         => 'None',
+                        'total-amount' => 'Total Amount',
                     ],
                 ],
 
@@ -858,6 +868,93 @@ return [
                 ],
 
                 'types' => [
+                    'simple' => [
+                        'customizable-options' => [
+                            'add-btn'           => 'Add Option',
+                            'empty-info'        => 'To create customizable options on a go.',
+                            'empty-title'       => 'Add Option',
+                            'info'              => 'This will customize the simple product.',
+                            'title'             => 'Customizable Item',
+
+                            'update-create' => [
+                                'is-required'               => 'Is Required',
+                                'max-characters'            => 'Max Characters',
+                                'name'                      => 'Title',
+                                'no'                        => 'No',
+                                'price'                     => 'Price',
+                                'save-btn'                  => 'Save',
+                                'supported-file-extensions' => 'Supported File Extensions',
+                                'title'                     => 'Option',
+                                'type'                      => 'Type',
+                                'yes'                       => 'Yes',
+                            ],
+
+                            'option' => [
+                                'add-btn'     => 'Add Option',
+                                'delete'      => 'Delete',
+                                'delete-btn'  => 'Delete',
+                                'edit-btn'    => 'Edit',
+                                'empty-info'  => 'To create various combination of product on a go.',
+                                'empty-title' => 'Add Option',
+
+                                'types' => [
+                                    'text' => [
+                                        'title' => 'Text',
+                                    ],
+
+                                    'textarea' => [
+                                        'title' => 'Textarea',
+                                    ],
+
+                                    'checkbox' => [
+                                        'title' => 'Checkbox',
+                                    ],
+
+                                    'radio' => [
+                                        'title' => 'Radio',
+                                    ],
+
+                                    'select' => [
+                                        'title' => 'Select',
+                                    ],
+
+                                    'multiselect' => [
+                                        'title' => 'Multiselect',
+                                    ],
+
+                                    'date' => [
+                                        'title' => 'Date',
+                                    ],
+
+                                    'datetime' => [
+                                        'title' => 'Datetime',
+                                    ],
+
+                                    'time' => [
+                                        'title' => 'Time',
+                                    ],
+
+                                    'file' => [
+                                        'title' => 'File',
+                                    ],
+                                ],
+
+                                'items' => [
+                                    'update-create' => [
+                                        'label'    => 'Label',
+                                        'price'    => 'Price',
+                                        'save-btn' => 'Save',
+                                        'title'    => 'Option',
+                                    ],
+                                ],
+                            ],
+
+                            'validations' => [
+                                'associated-product' => 'The product is already associated with a configurable, grouped, or bundle product.',
+                            ],
+                        ],
+                    ],
+
                     'configurable' => [
                         'add-btn'           => 'Add Variant',
                         'delete-btn'        => 'Delete',
@@ -3870,15 +3967,19 @@ return [
 
                 'notifications' => [
                     'cancel-order'                                     => 'Send a notification after canceling an order',
+                    'cancel-order-mail-to-admin'                       => 'Send a notification e-mail  to admin after canceling an order',
                     'customer'                                         => 'Send the customer account credentials after registration',
                     'customer-registration-confirmation-mail-to-admin' => 'Send a confirmation e-mail to admin after customer registration',
                     'info'                                             => 'To configure, receive emails for account verification, order confirmations, updates on invoices, refunds, shipments, and order cancellations.',
-                    'new-admin'                                        => 'Send a confirmation e-mail to the admin after placing a new order',
                     'new-inventory-source'                             => 'Send a notification e-mail to the inventory source after creating a shipment',
                     'new-invoice'                                      => 'Send a notification e-mail to the customer after creating a new invoice',
+                    'new-invoice-mail-to-admin'                        => 'Send a notification e-mail to the admin after creating a new invoice',
                     'new-order'                                        => 'Send a confirmation e-mail to the customer after placing a new order',
+                    'new-order-mail-to-admin'                          => 'Send a confirmation e-mail to the admin after placing a new order',
                     'new-refund'                                       => 'Send a notification e-mail to the customer after creating a refund',
+                    'new-refund-mail-to-admin'                         => 'Send a notification e-mail to the admin after creating a new refund',
                     'new-shipment'                                     => 'Send a notification e-mail to the customer after creating a shipment',
+                    'new-shipment-mail-to-admin'                       => 'Send a notification e-mail to the admin after creating a new shipment',
                     'registration'                                     => 'Send a confirmation e-mail after customer registration',
                     'title'                                            => 'Notifications',
                     'verification'                                     => 'Send a verification e-mail after customer registration',
