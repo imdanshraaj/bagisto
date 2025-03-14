@@ -1780,20 +1780,22 @@ return [
                     'message'       => 'Nachricht',
                     'pending'       => 'Ausstehend',
                     'processing'    => 'In Bearbeitung',
+                    'revoked'       => 'Widerrufen',
                     'status'        => 'Status',
                     'type'          => 'Typ',
                 ],
 
                 'modal' => [
-                    'completed'  => 'Abgeschlossen',
-                    'declined'   => 'Abgelehnt',
-                    'pending'    => 'Ausstehend',
-                    'processing' => 'In Bearbeitung',
-                    'status'     => 'Status',
-                    'title'      => 'DSGVO-Datenanfrage bearbeiten',
-                    'type'       => 'Typ',
-                    'message'    => 'Nachricht',
-                    'save-btn'   => 'Speichern',
+                    'completed'     => 'Abgeschlossen',
+                    'declined'      => 'Abgelehnt',
+                    'message'       => 'Nachricht',
+                    'pending'       => 'Ausstehend',
+                    'processing'    => 'In Bearbeitung',
+                    'revoked'       => 'Widerrufen',
+                    'save-btn'      => 'Speichern',
+                    'status'        => 'Status',
+                    'title'         => 'DSGVO-Datenanfrage bearbeiten',
+                    'type'          => 'Typ',
                 ],
 
                 'update-success'              => 'Datenanfrage erfolgreich aktualisiert und E-Mail an den Kunden gesendet.',
@@ -3646,90 +3648,6 @@ return [
                         'max-url-per-file' => 'Maximale Anzahl von URLs pro Datei',
                         'title'            => 'Dateibeschränkungen',
                     ],
-
-                    'store-url' => [
-                        'info'  => 'Häufigkeit und Prioritätsoption für die Store-URL festlegen.',
-
-                        'frequency' => [
-                            'title' => 'Häufigkeit',
-
-                            'options' => [
-                                'always'  => 'Immer',
-                                'daily'   => 'Täglich',
-                                'hourly'  => 'Stündlich',
-                                'monthly' => 'Monatlich',
-                                'never'   => 'Nie',
-                                'weekly'  => 'Wöchentlich',
-                                'yearly'  => 'Jährlich',
-                            ],
-                        ],
-
-                        'title'    => 'Store-URL',
-                        'priority' => 'Priorität',
-                    ],
-
-                    'categories' => [
-                        'info'  => 'Häufigkeit und Prioritätsoption für die Kategorien festlegen.',
-
-                        'frequency' => [
-                            'title' => 'Häufigkeit',
-
-                            'options' => [
-                                'always'  => 'Immer',
-                                'daily'   => 'Täglich',
-                                'hourly'  => 'Stündlich',
-                                'monthly' => 'Monatlich',
-                                'never'   => 'Nie',
-                                'weekly'  => 'Wöchentlich',
-                                'yearly'  => 'Jährlich',
-                            ],
-                        ],
-
-                        'title'    => 'Kategorien',
-                        'priority' => 'Priorität',
-                    ],
-
-                    'products' => [
-                        'info'  => 'Häufigkeit und Prioritätsoption für die Produkte festlegen.',
-
-                        'frequency' => [
-                            'title' => 'Häufigkeit',
-
-                            'options' => [
-                                'always'  => 'Immer',
-                                'daily'   => 'Täglich',
-                                'hourly'  => 'Stündlich',
-                                'monthly' => 'Monatlich',
-                                'never'   => 'Nie',
-                                'weekly'  => 'Wöchentlich',
-                                'yearly'  => 'Jährlich',
-                            ],
-                        ],
-
-                        'title'    => 'Produkte',
-                        'priority' => 'Priorität',
-                    ],
-
-                    'cms' => [
-                        'info'  => 'Häufigkeit und Prioritätsoption für die CMS-Seiten festlegen.',
-
-                        'frequency' => [
-                            'title' => 'Häufigkeit',
-
-                            'options' => [
-                                'always'  => 'Immer',
-                                'daily'   => 'Täglich',
-                                'hourly'  => 'Stündlich',
-                                'monthly' => 'Monatlich',
-                                'never'   => 'Nie',
-                                'weekly'  => 'Wöchentlich',
-                                'yearly'  => 'Jährlich',
-                            ],
-                        ],
-
-                        'title'    => 'CMS-Seiten',
-                        'priority' => 'Priorität',
-                    ],
                 ],
             ],
 
@@ -4753,10 +4671,29 @@ return [
                 'greeting'    => 'Wir heißen den neuen Kunden :customer_name, der sich gerade bei uns registriert hat, herzlich willkommen!',
                 'subject'     => 'Neukundenregistrierung',
             ],
-        ],
 
-        'gdpr' => [
-            'status' => 'Ihr GDPR-Anfragestatus',
+            'gdpr' => [
+                'new-delete-request' => 'Neue Anfrage zum Löschen von Daten',
+                'new-update-request' => 'Neue Anfrage zur Aktualisierung von Daten',
+
+                'new-request' => [
+                    'customer-name'  => 'Kundenname : ',
+                    'delete-summary' => 'Zusammenfassung der Löschanforderung',
+                    'message'        => 'Nachricht : ',
+                    'request-status' => 'Anfragestatus : ',
+                    'request-type'   => 'Anfragetyp : ',
+                    'summary'        => 'Zusammenfassung der Anfrage',
+                    'update-summary' => 'Zusammenfassung der Aktualisierungsanforderung',
+                ],
+
+                'status-update' => [
+                    'subject'        => 'GDPR-Anfrage wurde aktualisiert',
+                    'summary'        => 'Der Status der GDPR-Anfrage wurde aktualisiert',
+                    'request-status' => 'Anfragestatus:',
+                    'request-type'   => 'Anfragetyp:',
+                    'message'        => 'Nachricht:',
+                ],
+            ],
         ],
 
         'orders' => [

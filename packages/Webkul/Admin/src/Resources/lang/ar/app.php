@@ -1780,20 +1780,22 @@ return [
                     'message'       => 'الرسالة',
                     'pending'       => 'قيد الانتظار',
                     'processing'    => 'قيد المعالجة',
+                    'revoked'       => 'ملغى',
                     'status'        => 'الحالة',
                     'type'          => 'النوع',
                 ],
 
                 'modal' => [
-                    'completed'  => 'مكتمل',
-                    'declined'   => 'مرفوض',
-                    'pending'    => 'قيد الانتظار',
-                    'processing' => 'قيد المعالجة',
-                    'status'     => 'الحالة',
-                    'title'      => 'تعديل طلب بيانات GDPR',
-                    'type'       => 'النوع',
-                    'message'    => 'الرسالة',
-                    'save-btn'   => 'حفظ',
+                    'completed'     => 'مكتمل',
+                    'declined'      => 'مرفوض',
+                    'message'       => 'الرسالة',
+                    'pending'       => 'قيد الانتظار',
+                    'processing'    => 'قيد المعالجة',
+                    'revoked'       => 'ملغى',
+                    'save-btn'      => 'حفظ',
+                    'status'        => 'الحالة',
+                    'title'         => 'تعديل طلب بيانات GDPR',
+                    'type'          => 'النوع',
                 ],
 
                 'update-success'              => 'تم تحديث طلب البيانات بنجاح وتم إرسال البريد الإلكتروني إلى العميل.',
@@ -3646,90 +3648,6 @@ return [
                         'max-url-per-file' => 'الحد الأقصى لعدد عناوين URL لكل ملف',
                         'title'            => 'حدود الملف',
                     ],
-
-                    'store-url' => [
-                        'info'  => 'تعيين خيار التردد والأولوية لعنوان URL للمتجر.',
-
-                        'frequency' => [
-                            'title' => 'التردد',
-
-                            'options' => [
-                                'always'  => 'دائما',
-                                'daily'   => 'يوميا',
-                                'hourly'  => 'كل ساعة',
-                                'monthly' => 'شهريا',
-                                'never'   => 'أبدا',
-                                'weekly'  => 'أسبوعيا',
-                                'yearly'  => 'سنويًا',
-                            ],
-                        ],
-
-                        'title'    => 'عنوان URL للمتجر',
-                        'priority' => 'الأولوية',
-                    ],
-
-                    'categories' => [
-                        'info'  => 'تعيين خيار التردد والأولوية للفئات.',
-
-                        'frequency' => [
-                            'title' => 'التردد',
-
-                            'options' => [
-                                'always'  => 'دائما',
-                                'daily'   => 'يوميا',
-                                'hourly'  => 'كل ساعة',
-                                'monthly' => 'شهريا',
-                                'never'   => 'أبدا',
-                                'weekly'  => 'أسبوعيا',
-                                'yearly'  => 'سنويًا',
-                            ],
-                        ],
-
-                        'title'    => 'الفئات',
-                        'priority' => 'الأولوية',
-                    ],
-
-                    'products' => [
-                        'info'  => 'تعيين خيار التردد والأولوية للمنتجات.',
-
-                        'frequency' => [
-                            'title' => 'التردد',
-
-                            'options' => [
-                                'always'  => 'دائما',
-                                'daily'   => 'يوميا',
-                                'hourly'  => 'كل ساعة',
-                                'monthly' => 'شهريا',
-                                'never'   => 'أبدا',
-                                'weekly'  => 'أسبوعيا',
-                                'yearly'  => 'سنويًا',
-                            ],
-                        ],
-
-                        'title'    => 'المنتجات',
-                        'priority' => 'الأولوية',
-                    ],
-
-                    'cms' => [
-                        'info'  => 'تعيين خيار التردد والأولوية لصفحات إدارة المحتوى.',
-
-                        'frequency' => [
-                            'title' => 'التردد',
-
-                            'options' => [
-                                'always'  => 'دائما',
-                                'daily'   => 'يوميا',
-                                'hourly'  => 'كل ساعة',
-                                'monthly' => 'شهريا',
-                                'never'   => 'أبدا',
-                                'weekly'  => 'أسبوعيا',
-                                'yearly'  => 'سنويًا',
-                            ],
-                        ],
-
-                        'title'    => 'صفحات إدارة المحتوى',
-                        'priority' => 'الأولوية',
-                    ],
                 ],
             ],
 
@@ -4753,10 +4671,29 @@ return [
                 'greeting'    => 'نرحب ترحيبًا حارًا بالعميل الجديد، :customer_name الذي قام بالتسجيل معنا للتو!',
                 'subject'     => 'تسجيل العملاء الجدد',
             ],
-        ],
 
-        'gdpr' => [
-            'status' => 'حالة طلب GDPR الخاص بك',
+            'gdpr' => [
+                'new-delete-request' => 'طلب جديد لحذف البيانات',
+                'new-update-request' => 'طلب جديد لتحديث البيانات',
+
+                'new-request' => [
+                    'customer-name'  => 'اسم العميل : ',
+                    'delete-summary' => 'ملخص طلب الحذف',
+                    'message'        => 'رسالة : ',
+                    'request-status' => 'حالة الطلب : ',
+                    'request-type'   => 'نوع الطلب : ',
+                    'summary'        => 'ملخص الطلب',
+                    'update-summary' => 'ملخص طلب التحديث',
+                ],
+
+                'status-update' => [
+                    'subject'        => 'تم تحديث طلب GDPR',
+                    'summary'        => 'تم تحديث حالة طلب GDPR',
+                    'request-status' => 'حالة الطلب:',
+                    'request-type'   => 'نوع الطلب:',
+                    'message'        => 'رسالة:',
+                ],
+            ],
         ],
 
         'orders' => [

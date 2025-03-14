@@ -1780,20 +1780,22 @@ return [
                     'message'       => 'הודעה',
                     'pending'       => 'ממתין',
                     'processing'    => 'מעבד',
+                    'revoked'       => 'בוטל',
                     'status'        => 'סטטוס',
                     'type'          => 'סוג',
                 ],
 
                 'modal' => [
-                    'completed'  => 'הושלם',
-                    'declined'   => 'נדחה',
-                    'pending'    => 'ממתין',
-                    'processing' => 'מעבד',
-                    'status'     => 'סטטוס',
-                    'title'      => 'ערוך בקשת נתוני GDPR',
-                    'type'       => 'סוג',
-                    'message'    => 'הודעה',
-                    'save-btn'   => 'שמור',
+                    'completed'     => 'הושלם',
+                    'declined'      => 'נדחה',
+                    'message'       => 'הודעה',
+                    'pending'       => 'ממתין',
+                    'processing'    => 'מעבד',
+                    'revoked'       => 'בוטל',
+                    'save-btn'      => 'שמור',
+                    'status'        => 'סטטוס',
+                    'title'         => 'ערוך בקשת נתוני GDPR',
+                    'type'          => 'סוג',
                 ],
 
                 'update-success'              => 'בקשת הנתונים עודכנה בהצלחה ואימייל נשלח ללקוח.',
@@ -3646,90 +3648,6 @@ return [
                         'max-url-per-file' => 'מספר מרבי של כתובות URL לכל קובץ',
                         'title'            => 'גבולות קובץ',
                     ],
-
-                    'store-url' => [
-                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לכתובת ה-URL של החנות.',
-
-                        'frequency' => [
-                            'title' => 'תדירות',
-
-                            'options' => [
-                                'always'  => 'תמיד',
-                                'daily'   => 'יומי',
-                                'hourly'  => 'כל שעה',
-                                'monthly' => 'חודשי',
-                                'never'   => 'אף פעם',
-                                'weekly'  => 'שבועי',
-                                'yearly'  => 'שנתי',
-                            ],
-                        ],
-
-                        'title'    => 'כתובת ה-URL של החנות',
-                        'priority' => 'עדיפות',
-                    ],
-
-                    'categories' => [
-                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לקטגוריות.',
-
-                        'frequency' => [
-                            'title' => 'תדירות',
-
-                            'options' => [
-                                'always'  => 'תמיד',
-                                'daily'   => 'יומי',
-                                'hourly'  => 'כל שעה',
-                                'monthly' => 'חודשי',
-                                'never'   => 'אף פעם',
-                                'weekly'  => 'שבועי',
-                                'yearly'  => 'שנתי',
-                            ],
-                        ],
-
-                        'title'    => 'קטגוריות',
-                        'priority' => 'עדיפות',
-                    ],
-
-                    'products' => [
-                        'info'  => 'הגדר אפשרויות תדירות ועדיפות למוצרים.',
-
-                        'frequency' => [
-                            'title' => 'תדירות',
-
-                            'options' => [
-                                'always'  => 'תמיד',
-                                'daily'   => 'יומי',
-                                'hourly'  => 'כל שעה',
-                                'monthly' => 'חודשי',
-                                'never'   => 'אף פעם',
-                                'weekly'  => 'שבועי',
-                                'yearly'  => 'שנתי',
-                            ],
-                        ],
-
-                        'title'    => 'מוצרים',
-                        'priority' => 'עדיפות',
-                    ],
-
-                    'cms' => [
-                        'info'  => 'הגדר אפשרויות תדירות ועדיפות לעמודי CMS.',
-
-                        'frequency' => [
-                            'title' => 'תדירות',
-
-                            'options' => [
-                                'always'  => 'תמיד',
-                                'daily'   => 'יומי',
-                                'hourly'  => 'כל שעה',
-                                'monthly' => 'חודשי',
-                                'never'   => 'אף פעם',
-                                'weekly'  => 'שבועי',
-                                'yearly'  => 'שנתי',
-                            ],
-                        ],
-
-                        'title'    => 'עמודי CMS',
-                        'priority' => 'עדיפות',
-                    ],
                 ],
             ],
 
@@ -4753,10 +4671,29 @@ return [
                 'greeting'    => 'אנו מקבלים בברכה את הלקוח החדש, :customer_name שזה עתה נרשם אלינו!',
                 'subject'     => 'רישום לקוח חדש',
             ],
-        ],
 
-        'gdpr' => [
-            'status' => 'מצב בקשת ה-GDPR שלך',
+            'gdpr' => [
+                'new-delete-request' => 'בקשה חדשה למחיקת נתונים',
+                'new-update-request' => 'בקשה חדשה לעדכון נתונים',
+
+                'new-request' => [
+                    'customer-name'  => 'שם הלקוח : ',
+                    'delete-summary' => 'סיכום בקשת המחיקה',
+                    'message'        => 'הודעה : ',
+                    'request-status' => 'סטטוס הבקשה : ',
+                    'request-type'   => 'סוג הבקשה : ',
+                    'summary'        => 'סיכום הבקשה',
+                    'update-summary' => 'סיכום בקשת העדכון',
+                ],
+
+                'status-update' => [
+                    'subject'        => 'בקשת ה-GDPR עודכנה',
+                    'summary'        => 'סטטוס בקשת ה-GDPR עודכן',
+                    'request-status' => 'סטטוס הבקשה:',
+                    'request-type'   => 'סוג הבקשה:',
+                    'message'        => 'הודעה:',
+                ],
+            ],
         ],
 
         'orders' => [

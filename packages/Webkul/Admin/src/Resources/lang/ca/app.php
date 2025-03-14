@@ -1833,20 +1833,22 @@ return [
                     'message'       => 'Missatge',
                     'pending'       => 'Pendent',
                     'processing'    => 'Processant',
+                    'revoked'       => 'Revoked',
                     'status'        => 'Estat',
                     'type'          => 'Tipus',
                 ],
 
                 'modal' => [
-                    'completed'  => 'Completat',
-                    'declined'   => 'Rebutjat',
-                    'pending'    => 'Pendent',
-                    'processing' => 'Processant',
-                    'status'     => 'Estat',
-                    'title'      => 'Editar Sol·licitud de Dades GDPR',
-                    'type'       => 'Tipus',
-                    'message'    => 'Missatge',
-                    'save-btn'   => 'Desar',
+                    'completed'     => 'Completat',
+                    'declined'      => 'Rebutjat',
+                    'message'       => 'Missatge',
+                    'pending'       => 'Pendent',
+                    'processing'    => 'Processant',
+                    'revoked'       => 'Revoked',
+                    'save-btn'      => 'Desar',
+                    'status'        => 'Estat',
+                    'title'         => 'Editar Sol·licitud de Dades GDPR',
+                    'type'          => 'Tipus',
                 ],
 
                 'update-success'              => 'Sol·licitud de Dades actualitzada amb èxit i correu electrònic enviat al client.',
@@ -3688,90 +3690,6 @@ return [
                         'max-url-per-file' => 'Nombre màxim d\'URL per arxiu',
                         'title'            => 'Límits d\'arxius',
                     ],
-
-                    'store-url' => [
-                        'info'  => 'Estableix la freqüència i la prioritat per a la URL de la botiga.',
-
-                        'frequency' => [
-                            'title' => 'Freqüència',
-
-                            'options' => [
-                                'always'  => 'Sempre',
-                                'daily'   => 'Diàriament',
-                                'hourly'  => 'Cada hora',
-                                'monthly' => 'Mensualment',
-                                'never'   => 'Mai',
-                                'weekly'  => 'Setmanalment',
-                                'yearly'  => 'Anualment',
-                            ],
-                        ],
-
-                        'title'    => 'URL de la botiga',
-                        'priority' => 'Prioritat',
-                    ],
-
-                    'categories' => [
-                        'info'  => 'Estableix la freqüència i la prioritat per a les categories.',
-
-                        'frequency' => [
-                            'title' => 'Freqüència',
-
-                            'options' => [
-                                'always'  => 'Sempre',
-                                'daily'   => 'Diàriament',
-                                'hourly'  => 'Cada hora',
-                                'monthly' => 'Mensualment',
-                                'never'   => 'Mai',
-                                'weekly'  => 'Setmanalment',
-                                'yearly'  => 'Anualment',
-                            ],
-                        ],
-
-                        'title'    => 'Categories',
-                        'priority' => 'Prioritat',
-                    ],
-
-                    'products' => [
-                        'info'  => 'Estableix la freqüència i la prioritat per als productes.',
-
-                        'frequency' => [
-                            'title' => 'Freqüència',
-
-                            'options' => [
-                                'always'  => 'Sempre',
-                                'daily'   => 'Diàriament',
-                                'hourly'  => 'Cada hora',
-                                'monthly' => 'Mensualment',
-                                'never'   => 'Mai',
-                                'weekly'  => 'Setmanalment',
-                                'yearly'  => 'Anualment',
-                            ],
-                        ],
-
-                        'title'    => 'Productes',
-                        'priority' => 'Prioritat',
-                    ],
-
-                    'cms' => [
-                        'info'  => 'Estableix la freqüència i la prioritat per a les pàgines CMS.',
-
-                        'frequency' => [
-                            'title' => 'Freqüència',
-
-                            'options' => [
-                                'always'  => 'Sempre',
-                                'daily'   => 'Diàriament',
-                                'hourly'  => 'Cada hora',
-                                'monthly' => 'Mensualment',
-                                'never'   => 'Mai',
-                                'weekly'  => 'Setmanalment',
-                                'yearly'  => 'Anualment',
-                            ],
-                        ],
-
-                        'title'    => 'Pàgines CMS',
-                        'priority' => 'Prioritat',
-                    ],
                 ],
             ],
 
@@ -4752,10 +4670,29 @@ return [
                 'greeting'    => 'Donem una càlida benvinguda al nou client, :customer_name que s\'ha registrat amb nosaltres!',
                 'subject'     => 'Registre de nou client',
             ],
-        ],
 
-        'gdpr' => [
-            'status' => 'Estat de la teva sol·licitud GDPR',
+            'gdpr' => [
+                'new-delete-request' => 'New Request For Data Delete',
+                'new-update-request' => 'New Request For Data Update',
+
+                'new-request' => [
+                    'customer-name'  => 'Nom du client : ',
+                    'delete-summary' => 'Zusammenfassung der Löschanforderung',
+                    'message'        => 'Message : ',
+                    'request-status' => 'Request Status : ',
+                    'request-type'   => 'Request Type : ',
+                    'summary'        => 'Summary of Request',
+                    'update-summary' => 'Zusammenfassung der Aktualisierungsanforderung',
+                ],
+
+                'status-update' => [
+                    'subject'        => 'GDPR Request Has Been Updated',
+                    'summary'        => 'The GDPR Request Status Has Been Updated',
+                    'request-status' => 'Request Status:',
+                    'request-type'   => 'Request Type:',
+                    'message'        => 'Message:',
+                ],
+            ],
         ],
 
         'orders' => [

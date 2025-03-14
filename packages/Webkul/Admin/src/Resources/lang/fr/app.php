@@ -1780,20 +1780,22 @@ return [
                     'message'       => 'Message',
                     'pending'       => 'En attente',
                     'processing'    => 'En traitement',
+                    'revoked'       => 'Révoqué',
                     'status'        => 'Statut',
                     'type'          => 'Type',
                 ],
 
                 'modal' => [
-                    'completed'  => 'Terminé',
-                    'declined'   => 'Refusé',
-                    'pending'    => 'En attente',
-                    'processing' => 'En traitement',
-                    'status'     => 'Statut',
-                    'title'      => 'Modifier la demande de données RGPD',
-                    'type'       => 'Type',
-                    'message'    => 'Message',
-                    'save-btn'   => 'Enregistrer',
+                    'completed'     => 'Terminé',
+                    'declined'      => 'Refusé',
+                    'message'       => 'Message',
+                    'pending'       => 'En attente',
+                    'processing'    => 'En traitement',
+                    'revoked'       => 'Révoqué',
+                    'save-btn'      => 'Enregistrer',
+                    'status'        => 'Statut',
+                    'title'         => 'Modifier la demande de données RGPD',
+                    'type'          => 'Type',
                 ],
 
                 'update-success'              => 'Demande de données mise à jour avec succès et e-mail envoyé au client.',
@@ -3646,90 +3648,6 @@ return [
                         'max-url-per-file' => 'Nombre maximal d\'URL par fichier',
                         'title'            => 'Limites de Fichier',
                     ],
-
-                    'store-url' => [
-                        'info'  => 'Configurer les options de fréquence et de priorité pour l\'URL du magasin.',
-
-                        'frequency' => [
-                            'title' => 'Fréquence',
-
-                            'options' => [
-                                'always'  => 'Toujours',
-                                'daily'   => 'Quotidiennement',
-                                'hourly'  => 'Toutes les heures',
-                                'monthly' => 'Mensuellement',
-                                'never'   => 'Jamais',
-                                'weekly'  => 'Hebdomadairement',
-                                'yearly'  => 'Annuellement',
-                            ],
-                        ],
-
-                        'title'    => 'URL du Magasin',
-                        'priority' => 'Priorité',
-                    ],
-
-                    'categories' => [
-                        'info'  => 'Configurer les options de fréquence et de priorité pour les catégories.',
-
-                        'frequency' => [
-                            'title' => 'Fréquence',
-
-                            'options' => [
-                                'always'  => 'Toujours',
-                                'daily'   => 'Quotidiennement',
-                                'hourly'  => 'Toutes les heures',
-                                'monthly' => 'Mensuellement',
-                                'never'   => 'Jamais',
-                                'weekly'  => 'Hebdomadairement',
-                                'yearly'  => 'Annuellement',
-                            ],
-                        ],
-
-                        'title'    => 'Catégories',
-                        'priority' => 'Priorité',
-                    ],
-
-                    'products' => [
-                        'info'  => 'Configurer les options de fréquence et de priorité pour les produits.',
-
-                        'frequency' => [
-                            'title' => 'Fréquence',
-
-                            'options' => [
-                                'always'  => 'Toujours',
-                                'daily'   => 'Quotidiennement',
-                                'hourly'  => 'Toutes les heures',
-                                'monthly' => 'Mensuellement',
-                                'never'   => 'Jamais',
-                                'weekly'  => 'Hebdomadairement',
-                                'yearly'  => 'Annuellement',
-                            ],
-                        ],
-
-                        'title'    => 'Produits',
-                        'priority' => 'Priorité',
-                    ],
-
-                    'cms' => [
-                        'info'  => 'Configurer les options de fréquence et de priorité pour les pages CMS.',
-
-                        'frequency' => [
-                            'title' => 'Fréquence',
-
-                            'options' => [
-                                'always'  => 'Toujours',
-                                'daily'   => 'Quotidiennement',
-                                'hourly'  => 'Toutes les heures',
-                                'monthly' => 'Mensuellement',
-                                'never'   => 'Jamais',
-                                'weekly'  => 'Hebdomadairement',
-                                'yearly'  => 'Annuellement',
-                            ],
-                        ],
-
-                        'title'    => 'Pages CMS',
-                        'priority' => 'Priorité',
-                    ],
                 ],
             ],
 
@@ -4753,10 +4671,29 @@ return [
                 'greeting'    => 'Nous souhaitons la bienvenue au nouveau client, :customer_name qui vient de s`inscrire chez nous !',
                 'subject'     => 'Enregistrement d`un nouveau client',
             ],
-        ],
 
-        'gdpr' => [
-            'status' => 'Le statut de votre demande GDPR',
+            'gdpr' => [
+                'new-delete-request' => 'Nouvelle demande de suppression de données',
+                'new-update-request' => 'Nouvelle demande de mise à jour des données',
+
+                'new-request' => [
+                    'customer-name'  => 'Nom du client : ',
+                    'delete-summary' => 'Résumé de la demande de suppression',
+                    'message'        => 'Message : ',
+                    'request-status' => 'Statut de la demande : ',
+                    'request-type'   => 'Type de demande : ',
+                    'summary'        => 'Résumé de la demande',
+                    'update-summary' => 'Résumé de la demande de mise à jour',
+                ],
+
+                'status-update' => [
+                    'subject'        => 'La demande GDPR a été mise à jour',
+                    'summary'        => 'Le statut de la demande GDPR a été mis à jour',
+                    'request-status' => 'Statut de la demande:',
+                    'request-type'   => 'Type de demande:',
+                    'message'        => 'Message:',
+                ],
+            ],
         ],
 
         'orders' => [
