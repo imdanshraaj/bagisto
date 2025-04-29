@@ -431,6 +431,7 @@ class Cart
                 'company_name',
                 'first_name',
                 'last_name',
+                'vat_id',
                 'email',
                 'address',
                 'country',
@@ -823,6 +824,8 @@ class Cart
         }
 
         Event::dispatch('checkout.cart.collect.totals.before', $this->cart);
+
+        $this->refreshCart();
 
         $this->calculateItemsTax();
 
